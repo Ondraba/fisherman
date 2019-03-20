@@ -1,0 +1,55 @@
+{
+  "name": "fisherman",
+  "version": "0.1.0-alpha.1",
+  "description": "fisherman",
+  "author": "fisherman",
+  "license": "ISC",
+  "homepage": "fisherman",
+  "repository": {
+    "type": "git",
+    "url": "fisherman"
+  },
+  "scripts": {
+    "build": "tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "tslint:check": "tslint-config-prettier-check ./tslint.json",
+    "test": "jest --verbose --colors --runInBand --no-cache",
+    "prettier:show": "prettier --list-different \"./**/*\"",
+    "prettier:write": "prettier \"./**/*\" --write",
+    "precommit": "pretty-quick --staged && npm run tslint",
+    "coverage": "jest --coverage"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(src/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ]
+  },
+  "dependencies": {
+    "@types/node": "10.12.15",
+    "dotenv": "6.2.0",
+    "typescript-logging": "0.6.3"
+  },
+  "devDependencies": {
+    "@types/jest": "23.3.10",
+    "concurrently": "4.1.0",
+    "cross-env": "5.2.0",
+    "husky": "1.2.1",
+    "jest": "23.6.0",
+    "prettier": "1.15.3",
+    "pretty-quick": "1.8.0",
+    "rimraf": "2.6.2",
+    "ts-jest": "23.10.5",
+    "tslint": "5.12.0",
+    "tslint-config-prettier": "1.17.0",
+    "typescript": "3.2.2"
+  }
+}

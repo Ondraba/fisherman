@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "strict": true,
+    "moduleResolution": "node",
+    "inlineSourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    // Those two are needed to overcome bugs in apollo-client
+    "strictNullChecks": false,
+    "skipLibCheck": true,
+    "paths": {
+      "@graphql-model": ["shared/graphql.ts"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
