@@ -9,6 +9,8 @@ npm install --save fisherman
 ## Examples: 
 
  ```
+ import {_fish} from '../../../fisherman';
+ 
  const result = await _fish.composeA(
             function3P,
             (payload: number) =>
