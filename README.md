@@ -8,14 +8,8 @@ npm install --save fisherman
 
 ## Examples: 
 
- ```const result = await _fish.composeA(
-            function3P,
-            function3P,
-            function3P,
-            function3P,
-            function3P,
-            function3P,
-            function3P,
+ ```
+ const result = await _fish.composeA(
             function3P,
             (payload: number) =>
                 _fish
@@ -24,10 +18,6 @@ npm install --save fisherman
                     .set(payload === trueCondition2, () => functionIncPayload(20)(payload))
                     .set(payload === falseCondition3, functionIncPayload(30), false, true)
                     .done(),
-            function3P,
-            function3P,
-            function3P,
-            function3P,
             function2,
             function1P,
         )(mockData);
