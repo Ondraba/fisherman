@@ -54,6 +54,10 @@ const mutateFlag = (flag: string) =>
 
 npm run test
 
+## TODOS
+
+- native async-ready monads
+- memoization
 
 ## Authors
 
