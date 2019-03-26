@@ -6,7 +6,9 @@ Typescript library for easier and more understandable functional programming.
 
 npm install --save fisherman
 
-## Examples: 
+## Examples:
+
+Monads: 
 
  ```
 export const Project1Service = () => ({
