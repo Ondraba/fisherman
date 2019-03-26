@@ -14,25 +14,22 @@ Monads:
 export const Project1Service = () => ({
     createNewOrder: () =>
         _fish
-            .either(
-                new Error('create new  order error'),
-                data
-                    .run({userName: 'admin', password: 'password', index: 2}),
-            )
+            .either(new Error('create new  order error'), data.run({userName: 'admin', password: 'password', index: 2}))
             .map(checkOrderCount)
             .map(prepareOrder)
             .map(finishOrder)
             .map(getOrderFlag)
             .flatMap(mutateFlag)
-            .fold(
-                throwError,
-                exposePayload,
-            ),
+            .fold(throwError, exposePayload),
 });
 
-export const data = reader(database).map(db => db.getData());
+export const data = reader(database).map((db) => db.getData());
 
-const checkOrderCount = (order: Order) => _fish.maybe(order).map(order => order.count > 0 ?  order : null).valueOr(undefined);
+const checkOrderCount = (order: Order) =>
+    _fish
+        .maybe(order)
+        .map((order) => (order.count > 0 ? order : null))
+        .valueOr(undefined);
 
 const getOrderFlag = (order: Order) =>
     _fish
@@ -42,11 +39,10 @@ const getOrderFlag = (order: Order) =>
         .map((flags) => flags.flagA)
         .valueOr(undefined);
 
-const mutateFlag = (flag: string) => {
-    return either(new Error('mutate flag error'), flag)
+const mutateFlag = (flag: string) =>
+    either(new Error('mutate flag error'), flag)
         .map(extendFlag)
         .map(extendFlagAgain);
-};
 ```
 
 ## Running the tests
