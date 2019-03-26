@@ -9,20 +9,42 @@ npm install --save fisherman
 ## Examples: 
 
  ```
- import {_fish} from '../../../fisherman';
- 
- const result = await _fish.composeA(
-            function3P,
-            (payload: number) =>
-                _fish
-                    .cond(payload)
-                    .set(payload === falseCondition1, functionIncPayload(10), false, true)
-                    .set(payload === trueCondition2, () => functionIncPayload(20)(payload))
-                    .set(payload === falseCondition3, functionIncPayload(30), false, true)
-                    .done(),
-            function2,
-            function1P,
-        )(mockData);
+export const Project1Service = () => ({
+    createNewOrder: () =>
+        _fish
+            .either(
+                new Error('create new  order error'),
+                data
+                    .run({userName: 'admin', password: 'password', index: 2}),
+            )
+            .map(checkOrderCount)
+            .map(prepareOrder)
+            .map(finishOrder)
+            .map(getOrderFlag)
+            .flatMap(mutateFlag)
+            .fold(
+                throwError,
+                exposePayload,
+            ),
+});
+
+export const data = reader(database).map(db => db.getData());
+
+const checkOrderCount = (order: Order) => _fish.maybe(order).map(order => order.count > 0 ?  order : null).valueOr(undefined);
+
+const getOrderFlag = (order: Order) =>
+    _fish
+        .maybe(order)
+        .map((order) => order.detail)
+        .map((detail) => detail.flags)
+        .map((flags) => flags.flagA)
+        .valueOr(undefined);
+
+const mutateFlag = (flag: string) => {
+    return either(new Error('mutate flag error'), flag)
+        .map(extendFlag)
+        .map(extendFlagAgain);
+};
 ```
 
 ## Running the tests
