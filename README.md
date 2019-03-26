@@ -43,6 +43,8 @@ const mutateFlag = (flag: string) =>
     either(new Error('mutate flag error'), flag)
         .map(extendFlag)
         .map(extendFlagAgain);
+        
+        .......
 ```
 
 ## Running the tests
