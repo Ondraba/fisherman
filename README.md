@@ -11,7 +11,9 @@ npm install --save fisherman
 Monads: 
 
  ```
-export const Project1Service = () => ({
+import {_fish} from '../../fisherman';
+
+export const Project2Service = () => ({
     createNewOrder: () =>
         _fish
             .either(new Error('create new  order error'), data.run({userName: 'admin', password: 'password', index: 2}))
@@ -23,7 +25,7 @@ export const Project1Service = () => ({
             .fold(throwError, exposePayload),
 });
 
-export const data = reader(database).map((db) => db.getData());
+export const data = _fish.reader(database).map((db) => db.getData());
 
 const checkOrderCount = (order: Order) =>
     _fish
@@ -40,9 +42,10 @@ const getOrderFlag = (order: Order) =>
         .valueOr(undefined);
 
 const mutateFlag = (flag: string) =>
-    either(new Error('mutate flag error'), flag)
+    _fish.either(new Error('mutate flag error'), flag)
         .map(extendFlag)
         .map(extendFlagAgain);
+
         
         .......
 ```
