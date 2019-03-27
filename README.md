@@ -47,7 +47,7 @@ const mutateFlag = (flag: string) =>
         .map(extendFlagAgain);
 
         
-        .......
+.......
 ```
 Async ready composition with utils:
 
@@ -80,7 +80,9 @@ export const logOverCount = (order:Order) => {
 }
 
 const mutateFlag = (flag: string) => _fish.pipeA(extendFlag, extendFlagAgain)(flag);
-        .......
+
+
+.......
         
 ```  
 
