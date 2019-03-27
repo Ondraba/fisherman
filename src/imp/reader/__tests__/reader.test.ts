@@ -11,7 +11,7 @@ describe('reader monad tests', () => {
         const initFn = (args: number) => args + 1;
         const newFn = (args: number) => args + 10;
         const initReader = _fish.reader(initFn);
-        const newReader = initReader.new(newFn);
+        const newReader = initReader.of(newFn);
         const result = newReader.run(0);
         expect(result).toBe(10);
     });

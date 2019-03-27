@@ -44,12 +44,12 @@ describe('cond tests', () => {
             function3P,
             function3P,
             function3P,
-            (payload: number) =>
+            (payload: any) =>
                 _fish
                     .cond(payload)
                     .set(payload === falseCondition1, functionIncPayload(10), false, true)
                     .set(payload === trueCondition2, () => functionIncPayload(20)(payload))
-                    .set(payload === falseCondition3, functionIncPayload(30), false, true)
+                    .set(payload === falseCondition3, functionIncPayload(30), true, true)
                     .done(),
             function3P,
             function3P,
