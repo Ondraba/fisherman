@@ -49,6 +49,40 @@ const mutateFlag = (flag: string) =>
         
         .......
 ```
+Async ready composition with utils:
+
+```
+export const Project2Service = () => ({
+    createNewOrder: () =>
+        _fish.composeA(
+            mutateFlag,
+            getOrderFlag,
+            (payload) =>
+                _fish
+                    .cond(payload)
+                    .set(payload.count > 10, nullCount, false, true)
+                    .set(payload.count === 0, () => addMinCount(payload))
+                    .set(payload.count > 99, logOverCount, true, true)
+                    .done(),
+            finishOrder,
+            _fish.inject(() => console.log('order prepared'), false),
+            prepareOrder,
+            checkOrderCount,
+            getDataFromDb,
+        )({userName: 'admin', password: 'password', index: 2}),
+});
+
+export const getDataFromDb = async (credentials: DatabaseConnectionArgs) => await database(credentials).getData();
+
+export const logOverCount = (order:Order) => {
+    console.log(`overCount in ${JSON.stringify(order)}`);
+    return order;
+}
+
+const mutateFlag = (flag: string) => _fish.pipeA(extendFlag, extendFlagAgain)(flag);
+        .......
+        
+```  
 
 ## Running the tests
 
