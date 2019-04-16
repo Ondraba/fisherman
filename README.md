@@ -54,6 +54,8 @@ const mutateFlag = (flag: string) =>
 Async ready composition with utils:
 
 ```
+import {_fish} from '../../fisherman';
+
 export const Project2Service = () => ({
     createNewOrder: () =>
         _fish.composeA(
