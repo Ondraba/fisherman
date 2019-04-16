@@ -31,7 +31,7 @@ const function4PCurr = () => async (count: number): Promise<number> => {
     return count + 1;
 };
 
-describe('composeP tests', () => {
+describe('maybePipeA tests', () => {
     it('should return true caused by undefined return value fn', async () => {
         const result = await _fish.maybePipeA(() => undefined, function2)(mockData).isEmpty;
         expect(result).toBe(true);
