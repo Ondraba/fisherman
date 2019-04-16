@@ -308,4 +308,249 @@ export interface Pretyped {
         fn14: AsyncFlowType<T13, T14>,
         fn15: AsyncFlowType<T14, T15>,
     ): (input?: T0) => (x: T0) => T15;
+
+    maybePipeA<T0, T1, T2>(
+        fn1: AsyncFlowType<T0, T1>,
+        fn2: AsyncFlowType<T1, T2>,
+    ): (
+        input?: T0,
+    ) => {
+        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T2;
+        value: T2;
+        isEmpty: boolean;
+    };
+
+    maybePipeA<T0, T1, T2, T3>(
+        fn1: AsyncFlowType<T0, T1>,
+        fn2: AsyncFlowType<T1, T2>,
+        fn3: AsyncFlowType<T2, T3>,
+    ): (
+        input?: T0,
+    ) => {
+        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T3;
+        value: T3;
+        isEmpty: boolean;
+    };
+
+    maybePipeA<T0, T1, T2, T3, T4>(
+        fn1: AsyncFlowType<T0, T1>,
+        fn2: AsyncFlowType<T1, T2>,
+        fn3: AsyncFlowType<T2, T3>,
+        fn4: AsyncFlowType<T3, T4>,
+    ): (
+        input?: T0,
+    ) => {
+        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T4;
+        value: T4;
+        isEmpty: boolean;
+    };
+
+    maybePipeA<T0, T1, T2, T3, T4, T5>(
+        fn1: AsyncFlowType<T0, T1>,
+        fn2: AsyncFlowType<T1, T2>,
+        fn3: AsyncFlowType<T2, T3>,
+        fn4: AsyncFlowType<T3, T4>,
+        fn5: AsyncFlowType<T4, T5>,
+    ): (
+        input?: T0,
+    ) => {
+        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T5;
+        value: T5;
+        isEmpty: boolean;
+    };
+
+    maybePipeA<T0, T1, T2, T3, T4, T5, T6>(
+        fn1: AsyncFlowType<T0, T1>,
+        fn2: AsyncFlowType<T1, T2>,
+        fn3: AsyncFlowType<T2, T3>,
+        fn4: AsyncFlowType<T3, T4>,
+        fn5: AsyncFlowType<T4, T5>,
+        fn6: AsyncFlowType<T5, T6>,
+    ): (
+        input?: T0,
+    ) => {
+        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T6;
+        value: T6;
+        isEmpty: boolean;
+    };
+
+    maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7>(
+        fn1: AsyncFlowType<T0, T1>,
+        fn2: AsyncFlowType<T1, T2>,
+        fn3: AsyncFlowType<T2, T3>,
+        fn4: AsyncFlowType<T3, T4>,
+        fn5: AsyncFlowType<T4, T5>,
+        fn6: AsyncFlowType<T5, T6>,
+        fn7: AsyncFlowType<T6, T7>,
+    ): (
+        input?: T0,
+    ) => {
+        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T7;
+        value: T7;
+        isEmpty: boolean;
+    };
+
+    maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8>(
+        fn1: AsyncFlowType<T0, T1>,
+        fn2: AsyncFlowType<T1, T2>,
+        fn3: AsyncFlowType<T2, T3>,
+        fn4: AsyncFlowType<T3, T4>,
+        fn5: AsyncFlowType<T4, T5>,
+        fn6: AsyncFlowType<T5, T6>,
+        fn7: AsyncFlowType<T6, T7>,
+        fn8: AsyncFlowType<T7, T8>,
+    ): (
+        input?: T0,
+    ) => {
+        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T8;
+        value: T8;
+        isEmpty: boolean;
+    };
+
+    maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9>(
+        fn1: AsyncFlowType<T0, T1>,
+        fn2: AsyncFlowType<T1, T2>,
+        fn3: AsyncFlowType<T2, T3>,
+        fn4: AsyncFlowType<T3, T4>,
+        fn5: AsyncFlowType<T4, T5>,
+        fn6: AsyncFlowType<T5, T6>,
+        fn7: AsyncFlowType<T6, T7>,
+        fn8: AsyncFlowType<T7, T8>,
+        fn9: AsyncFlowType<T8, T9>,
+    ): (
+        input?: T0,
+    ) => {
+        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T9;
+        value: T9;
+        isEmpty: boolean;
+    };
+
+    maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(
+        fn1: AsyncFlowType<T0, T1>,
+        fn2: AsyncFlowType<T1, T2>,
+        fn3: AsyncFlowType<T2, T3>,
+        fn4: AsyncFlowType<T3, T4>,
+        fn5: AsyncFlowType<T4, T5>,
+        fn6: AsyncFlowType<T5, T6>,
+        fn7: AsyncFlowType<T6, T7>,
+        fn8: AsyncFlowType<T7, T8>,
+        fn9: AsyncFlowType<T8, T9>,
+        fn10: AsyncFlowType<T9, T10>,
+    ): (
+        input?: T0,
+    ) => {
+        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T10;
+        value: T10;
+        isEmpty: boolean;
+    };
+
+    maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(
+        fn1: AsyncFlowType<T0, T1>,
+        fn2: AsyncFlowType<T1, T2>,
+        fn3: AsyncFlowType<T2, T3>,
+        fn4: AsyncFlowType<T3, T4>,
+        fn5: AsyncFlowType<T4, T5>,
+        fn6: AsyncFlowType<T5, T6>,
+        fn7: AsyncFlowType<T6, T7>,
+        fn8: AsyncFlowType<T7, T8>,
+        fn9: AsyncFlowType<T8, T9>,
+        fn10: AsyncFlowType<T9, T10>,
+        fn11: AsyncFlowType<T10, T11>,
+    ): (
+        input?: T0,
+    ) => {
+        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T11;
+        value: T11;
+        isEmpty: boolean;
+    };
+
+    maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(
+        fn1: AsyncFlowType<T0, T1>,
+        fn2: AsyncFlowType<T1, T2>,
+        fn3: AsyncFlowType<T2, T3>,
+        fn4: AsyncFlowType<T3, T4>,
+        fn5: AsyncFlowType<T4, T5>,
+        fn6: AsyncFlowType<T5, T6>,
+        fn7: AsyncFlowType<T6, T7>,
+        fn8: AsyncFlowType<T7, T8>,
+        fn9: AsyncFlowType<T8, T9>,
+        fn10: AsyncFlowType<T9, T10>,
+        fn11: AsyncFlowType<T10, T11>,
+        fn12: AsyncFlowType<T11, T12>,
+    ): (
+        input?: T0,
+    ) => {
+        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T12;
+        value: T12;
+        isEmpty: boolean;
+    };
+
+    maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(
+        fn1: AsyncFlowType<T0, T1>,
+        fn2: AsyncFlowType<T1, T2>,
+        fn3: AsyncFlowType<T2, T3>,
+        fn4: AsyncFlowType<T3, T4>,
+        fn5: AsyncFlowType<T4, T5>,
+        fn6: AsyncFlowType<T5, T6>,
+        fn7: AsyncFlowType<T6, T7>,
+        fn8: AsyncFlowType<T7, T8>,
+        fn9: AsyncFlowType<T8, T9>,
+        fn10: AsyncFlowType<T9, T10>,
+        fn11: AsyncFlowType<T10, T11>,
+        fn12: AsyncFlowType<T11, T12>,
+        fn13: AsyncFlowType<T12, T13>,
+    ): (
+        input?: T0,
+    ) => {
+        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T13;
+        value: T13;
+        isEmpty: boolean;
+    };
+
+    maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(
+        fn1: AsyncFlowType<T0, T1>,
+        fn2: AsyncFlowType<T1, T2>,
+        fn3: AsyncFlowType<T2, T3>,
+        fn4: AsyncFlowType<T3, T4>,
+        fn5: AsyncFlowType<T4, T5>,
+        fn6: AsyncFlowType<T5, T6>,
+        fn7: AsyncFlowType<T6, T7>,
+        fn8: AsyncFlowType<T7, T8>,
+        fn9: AsyncFlowType<T8, T9>,
+        fn10: AsyncFlowType<T9, T10>,
+        fn11: AsyncFlowType<T10, T11>,
+        fn12: AsyncFlowType<T11, T12>,
+        fn13: AsyncFlowType<T12, T13>,
+        fn14: AsyncFlowType<T13, T14>,
+    ): (
+        input?: T0,
+    ) => {
+        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T14;
+        value: T14;
+        isEmpty: boolean;
+    };
+
+    maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>(
+        fn1: AsyncFlowType<T0, T1>,
+        fn2: AsyncFlowType<T1, T2>,
+        fn3: AsyncFlowType<T2, T3>,
+        fn4: AsyncFlowType<T3, T4>,
+        fn5: AsyncFlowType<T4, T5>,
+        fn6: AsyncFlowType<T5, T6>,
+        fn7: AsyncFlowType<T6, T7>,
+        fn8: AsyncFlowType<T7, T8>,
+        fn9: AsyncFlowType<T8, T9>,
+        fn10: AsyncFlowType<T9, T10>,
+        fn11: AsyncFlowType<T10, T11>,
+        fn12: AsyncFlowType<T11, T12>,
+        fn13: AsyncFlowType<T12, T13>,
+        fn14: AsyncFlowType<T13, T14>,
+        fn15: AsyncFlowType<T14, T15>,
+    ): (
+        input?: T0,
+    ) => {
+        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T15;
+        value: T15;
+        isEmpty: boolean;
+    };
 }
