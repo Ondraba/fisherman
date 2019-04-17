@@ -11,6 +11,7 @@ npm install --save fisherman
 - reader, either and maybe monad by functions
 - async ready monad inspired composition 
 - helpers like composition ready IF or composition injection
+- test coverage, service examples
 
 ## Examples:
 
