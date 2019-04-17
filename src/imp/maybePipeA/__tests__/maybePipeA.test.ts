@@ -41,12 +41,16 @@ describe('maybePipeA tests', () => {
         expect(result).toBe(false);
     });
     it('should return orValue caused by undefined return value fn', async () => {
-        const result = await _fish.maybePipeA(() => undefined, function2)(mockData).valueOr(10);
+        const result = await _fish
+            .maybePipeA(() => undefined, function2)(mockData)
+            .valueOr(10);
         expect(result).toBe(10);
     });
     it('should return not orValue caused by non empty return value fn', async () => {
         const expectedResult = 3;
-        const result = await _fish.maybePipeA(function1P, function2)(mockData).valueOr(10);
+        const result = await _fish
+            .maybePipeA(function1P, function2)(mockData)
+            .valueOr(10);
         expect(result).toBe(expectedResult);
     });
     it('should return valid result after different fn types async pipe', async () => {

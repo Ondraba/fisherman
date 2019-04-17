@@ -6,3 +6,4 @@ export * from './either';
 export * from './maybe';
 export * from './reader';
 export * from './maybePipeA';
+export * from './eitherPipeA';

@@ -1,4 +1,4 @@
-type AsyncFlowType<I, TPayload> = (input: I) => Promise<TPayload> | TPayload;
+import {AsyncFlowEitherType, AsyncFlowType} from '../imp/common';
 
 export interface Pretyped {
     composeA<T0, T1, T2>(fn1: AsyncFlowType<T1, T2>, fn2: AsyncFlowType<T0, T1>): (input?: T0) => (x: T0) => T2;
@@ -552,5 +552,131 @@ export interface Pretyped {
         valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T15;
         value: T15;
         isEmpty: boolean;
+    };
+
+    eitherPipeA<T0, T1, T2, LEFT1, LEFT2>(
+        fn1: AsyncFlowEitherType<T0, T1, LEFT1>,
+        fn2: AsyncFlowEitherType<T1, T2, LEFT2>,
+    ): (
+        input?: T0,
+    ) => {
+        fold: LEFT1 | LEFT2 | T2;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T2;
+    };
+
+    eitherPipeA<T0, T1, T2, T3, LEFT1, LEFT2, LEFT3>(
+        fn1: AsyncFlowEitherType<T0, T1, LEFT1>,
+        fn2: AsyncFlowEitherType<T1, T2, LEFT2>,
+        fn3: AsyncFlowEitherType<T2, T3, LEFT3>,
+    ): (
+        input?: T0,
+    ) => {
+        fold: LEFT1 | LEFT2 | LEFT3 | T3;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T3;
+    };
+
+    eitherPipeA<T0, T1, T2, T3, T4, LEFT1, LEFT2, LEFT3, LEFT4>(
+        fn1: AsyncFlowEitherType<T0, T1, LEFT1>,
+        fn2: AsyncFlowEitherType<T1, T2, LEFT2>,
+        fn3: AsyncFlowEitherType<T2, T3, LEFT3>,
+        fn4: AsyncFlowEitherType<T2, T4, LEFT4>,
+    ): (
+        input?: T0,
+    ) => {
+        fold: LEFT1 | LEFT2 | LEFT3 | LEFT4 | T4;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T4;
+    };
+
+    eitherPipeA<T0, T1, T2, T3, T4, T5, LEFT1, LEFT2, LEFT3, LEFT4, LEFT5>(
+        fn1: AsyncFlowEitherType<T0, T1, LEFT1>,
+        fn2: AsyncFlowEitherType<T1, T2, LEFT2>,
+        fn3: AsyncFlowEitherType<T2, T3, LEFT3>,
+        fn4: AsyncFlowEitherType<T3, T4, LEFT4>,
+        fn5: AsyncFlowEitherType<T4, T5, LEFT5>,
+    ): (
+        input?: T0,
+    ) => {
+        fold: LEFT1 | LEFT2 | LEFT3 | LEFT4 | LEFT5 | T5;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T5;
+    };
+
+    eitherPipeA<T0, T1, T2, T3, T4, T5, T6, LEFT1, LEFT2, LEFT3, LEFT4, LEFT5, LEFT6>(
+        fn1: AsyncFlowEitherType<T0, T1, LEFT1>,
+        fn2: AsyncFlowEitherType<T1, T2, LEFT2>,
+        fn3: AsyncFlowEitherType<T2, T3, LEFT3>,
+        fn4: AsyncFlowEitherType<T3, T4, LEFT4>,
+        fn5: AsyncFlowEitherType<T4, T5, LEFT5>,
+        fn6: AsyncFlowEitherType<T5, T6, LEFT6>,
+    ): (
+        input?: T0,
+    ) => {
+        fold: LEFT1 | LEFT2 | LEFT3 | LEFT4 | LEFT5 | LEFT6 | T6;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T6;
+    };
+
+    eitherPipeA<T0, T1, T2, T3, T4, T5, T6, T7, LEFT1, LEFT2, LEFT3, LEFT4, LEFT5, LEFT6, LEFT7>(
+        fn1: AsyncFlowEitherType<T0, T1, LEFT1>,
+        fn2: AsyncFlowEitherType<T1, T2, LEFT2>,
+        fn3: AsyncFlowEitherType<T2, T3, LEFT3>,
+        fn4: AsyncFlowEitherType<T3, T4, LEFT4>,
+        fn5: AsyncFlowEitherType<T4, T5, LEFT5>,
+        fn6: AsyncFlowEitherType<T5, T6, LEFT6>,
+        fn7: AsyncFlowEitherType<T6, T7, LEFT7>,
+    ): (
+        input?: T0,
+    ) => {
+        fold: LEFT1 | LEFT2 | LEFT3 | LEFT4 | LEFT5 | LEFT6 | LEFT7 | T7;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T7;
+    };
+
+    eitherPipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, LEFT1, LEFT2, LEFT3, LEFT4, LEFT5, LEFT6, LEFT7, LEFT8>(
+        fn1: AsyncFlowEitherType<T0, T1, LEFT1>,
+        fn2: AsyncFlowEitherType<T1, T2, LEFT2>,
+        fn3: AsyncFlowEitherType<T2, T3, LEFT3>,
+        fn4: AsyncFlowEitherType<T3, T4, LEFT4>,
+        fn5: AsyncFlowEitherType<T4, T5, LEFT5>,
+        fn6: AsyncFlowEitherType<T5, T6, LEFT6>,
+        fn7: AsyncFlowEitherType<T6, T7, LEFT7>,
+        fn8: AsyncFlowEitherType<T7, T8, LEFT8>,
+    ): (
+        input?: T0,
+    ) => {
+        fold: LEFT1 | LEFT2 | LEFT3 | LEFT4 | LEFT5 | LEFT6 | LEFT7 | LEFT8 | T8;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T8;
+    };
+
+    eitherPipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, LEFT1, LEFT2, LEFT3, LEFT4, LEFT5, LEFT6, LEFT7, LEFT8, LEFT9>(
+        fn1: AsyncFlowEitherType<T0, T1, LEFT1>,
+        fn2: AsyncFlowEitherType<T1, T2, LEFT2>,
+        fn3: AsyncFlowEitherType<T2, T3, LEFT3>,
+        fn4: AsyncFlowEitherType<T3, T4, LEFT4>,
+        fn5: AsyncFlowEitherType<T4, T5, LEFT5>,
+        fn6: AsyncFlowEitherType<T5, T6, LEFT6>,
+        fn7: AsyncFlowEitherType<T6, T7, LEFT7>,
+        fn8: AsyncFlowEitherType<T7, T8, LEFT8>,
+        fn9: AsyncFlowEitherType<T8, T9, LEFT9>,
+    ): (
+        input?: T0,
+    ) => {
+        fold: LEFT1 | LEFT2 | LEFT3 | LEFT4 | LEFT5 | LEFT6 | LEFT7 | LEFT8 | LEFT9 | T9;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T9;
+    };
+
+    eitherPipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, LEFT1, LEFT2, LEFT3, LEFT4, LEFT5, LEFT6, LEFT7, LEFT8, LEFT9, LEFT10>(
+        fn1: AsyncFlowEitherType<T0, T1, LEFT1>,
+        fn2: AsyncFlowEitherType<T1, T2, LEFT2>,
+        fn3: AsyncFlowEitherType<T2, T3, LEFT3>,
+        fn4: AsyncFlowEitherType<T3, T4, LEFT4>,
+        fn5: AsyncFlowEitherType<T4, T5, LEFT5>,
+        fn6: AsyncFlowEitherType<T5, T6, LEFT6>,
+        fn7: AsyncFlowEitherType<T6, T7, LEFT7>,
+        fn8: AsyncFlowEitherType<T7, T8, LEFT8>,
+        fn9: AsyncFlowEitherType<T8, T9, LEFT9>,
+        fn10: AsyncFlowEitherType<T9, T10, LEFT10>,
+    ): (
+        input?: T0,
+    ) => {
+        fold: LEFT1 | LEFT2 | LEFT3 | LEFT4 | LEFT5 | LEFT6 | LEFT7 | LEFT8 | LEFT9 | LEFT10 | T10;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T10;
     };
 }
