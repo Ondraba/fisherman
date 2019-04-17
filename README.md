@@ -6,6 +6,12 @@ Typescript library for easier and more understandable functional programming.
 
 npm install --save fisherman
 
+## What is inside:
+- async ready left and right composition
+- reader, either and maybe monad by functions
+- async ready monad inspired composition 
+- composition helpers like composition ready IF or composition injection
+
 ## Examples:
 
 Monads: 
