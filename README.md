@@ -129,8 +129,6 @@ const mutateFlag = (flag: string) => _fish.eitherPipeA({exec:extendFlag, left:'e
 npm run test
 
 ## TODOS
-
-- native async-ready monads
 - memoization
 
 ## Authors
