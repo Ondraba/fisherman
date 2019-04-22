@@ -10,7 +10,7 @@ npm install --save fisherman
 - async ready left and right composition
 - reader, either and maybe monad by functions
 - async ready monad inspired composition 
-- helpers like composition ready IF or composition injection
+- helpers like composition ready IF, composition injection or memoization
 - test coverage, service examples
 
 ## Examples:
@@ -130,7 +130,6 @@ const mutateFlag = (flag: string) => _fish.eitherPipeA({exec:extendFlag, left:'e
 npm run test
 
 ## TODOS
-- memoization
 
 ## Authors
 
