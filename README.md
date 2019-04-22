@@ -6,6 +6,13 @@ Typescript library for easier and more understandable functional programming.
 
 npm install --save fisherman
 
+## What is inside:
+- async ready left and right composition
+- reader, either and maybe monad by functions
+- async ready monad inspired composition 
+- helpers like composition ready IF or composition injection
+- test coverage, service examples
+
 ## Examples:
 
 Monads: 
@@ -90,13 +97,39 @@ const mutateFlag = (flag: string) => _fish.pipeA(extendFlag, extendFlagAgain)(fl
         
 ```  
 
+Async ready "monad like" composition with utils:
+
+```
+createNewOrder: () =>
+        _fish.maybePipeA(
+            getDataFromDb,
+            checkOrderCount,
+            prepareOrder,
+            _fish.inject(() => console.log('order prepared'), false),
+            (payload) =>
+                _fish
+                    .cond(payload)
+                    .set(payload.count > 10, nullCount, false, true)
+                    .set(payload.count === 0, () => addMinCount(payload))
+                    .set(payload.count > 99, logOverCount, true, true)
+                    .done(),
+            finishOrder,
+            getOrderFlag,
+            mutateFlag,
+        )({userName: 'admin', password: 'password', index: 2}).valueOr('ORDER FAILED'),
+
+const mutateFlag = (flag: string) => _fish.eitherPipeA({exec:extendFlag, left:'extend flag error'}, {exec: extendFlagAgain,left:'extend flag error again'})(flag).propagate((error:any) => console.log(error));
+
+
+.......
+
+```
+
 ## Running the tests
 
 npm run test
 
 ## TODOS
-
-- native async-ready monads
 - memoization
 
 ## Authors
