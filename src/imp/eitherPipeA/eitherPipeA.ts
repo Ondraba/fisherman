@@ -6,7 +6,6 @@ export const eitherPipeA = (...funcs: Array<AsyncFlowEitherType<any, any, any>>)
         return previousTask.then((promiseResult: any) => {
             if (isEmpty(promiseResult)) {
                 currentLeft = !isEmpty(currentLeft) ? currentLeft : currentTask.left;
-                console.log(currentLeft);
                 return Promise.resolve(undefined);
             }
             return currentTask.exec(promiseResult);
