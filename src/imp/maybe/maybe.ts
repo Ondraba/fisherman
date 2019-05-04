@@ -13,3 +13,9 @@ export const maybe = <T>(currentValue?: T): IMaybe<T> => ({
     map: <U>(fn: (input?: T) => U) => (!isEmpty(currentValue) ? maybe<U>(fn(currentValue)) : maybe<U>()),
     flatMap: <U>(fn: (input?: T) => IMaybe<U>) => (!isEmpty(currentValue) ? fn(currentValue) : maybe<U>()),
 });
+
+
+const pes = {
+    auto: 22,
+    les: [10,22],
+}
