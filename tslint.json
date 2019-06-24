@@ -30,8 +30,8 @@
         "check-format",
         "allow-leading-underscore",
         "allow-pascal-case"
-      ],
-      "member-ordering": [false, {}]
-    }
+      ]
+    },
+    "member-ordering": [false, {}]
   }
 }
