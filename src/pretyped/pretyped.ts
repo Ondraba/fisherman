@@ -315,9 +315,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T2;
-        value: T2;
-        isEmpty: boolean;
+        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T2>;
+        value: Promise<T2>;
+        isEmpty:  Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3>(
@@ -327,9 +327,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T3;
-        value: T3;
-        isEmpty: boolean;
+        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T3>;
+        value: Promise<T3>;
+        isEmpty:  Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4>(
@@ -340,9 +340,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T4;
-        value: T4;
-        isEmpty: boolean;
+        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T4>;
+        value: Promise<T4>;
+        isEmpty:  Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5>(
@@ -354,9 +354,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T5;
-        value: T5;
-        isEmpty: boolean;
+        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T5>;
+        value: Promise<T5>;
+        isEmpty:  Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6>(
@@ -369,9 +369,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T6;
-        value: T6;
-        isEmpty: boolean;
+        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T6>;
+        value: Promise<T6>;
+        isEmpty:  Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7>(
@@ -385,9 +385,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T7;
-        value: T7;
-        isEmpty: boolean;
+        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T7>;
+        value: Promise<T7>;
+        isEmpty:  Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8>(
@@ -402,9 +402,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T8;
-        value: T8;
-        isEmpty: boolean;
+        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T8>;
+        value: Promise<T8>;
+        isEmpty:  Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9>(
@@ -420,9 +420,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T9;
-        value: T9;
-        isEmpty: boolean;
+        vvalueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T9>;
+        value: Promise<T9>;
+        isEmpty:  Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(
@@ -439,9 +439,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T10;
-        value: T10;
-        isEmpty: boolean;
+        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T10>;
+        value: Promise<T10>;
+        isEmpty:  Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(
@@ -459,9 +459,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T11;
-        value: T11;
-        isEmpty: boolean;
+        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T11>;
+        value: Promise<T11>;
+        isEmpty:  Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(
@@ -480,9 +480,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T12;
-        value: T12;
-        isEmpty: boolean;
+        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T12>;
+        value: Promise<T12>;
+        isEmpty:  Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(
@@ -502,9 +502,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T13;
-        value: T13;
-        isEmpty: boolean;
+        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T13>;
+        value: Promise<T13>;
+        isEmpty:  Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(
@@ -525,9 +525,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T14;
-        value: T14;
-        isEmpty: boolean;
+        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T14>;
+        value: Promise<T14>;
+        isEmpty:  Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>(
@@ -549,9 +549,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) => TValueOr | T15;
-        value: T15;
-        isEmpty: boolean;
+        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T15>;
+        value: Promise<T15>;
+        isEmpty:  Promise<boolean>;
     };
 
     eitherPipeA<T0, T1, T2, LEFT1, LEFT2>(
@@ -560,8 +560,8 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        fold: LEFT1 | LEFT2 | T2;
-        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T2;
+        fold: Promise<LEFT1 | LEFT2 | T2>;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => Promise<TPropagateFn | T2>;
     };
 
     eitherPipeA<T0, T1, T2, T3, LEFT1, LEFT2, LEFT3>(
@@ -571,8 +571,8 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        fold: LEFT1 | LEFT2 | LEFT3 | T3;
-        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T3;
+        fold: Promise<LEFT1 | LEFT2 | LEFT3 | T3>;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => Promise<TPropagateFn | T3>;
     };
 
     eitherPipeA<T0, T1, T2, T3, T4, LEFT1, LEFT2, LEFT3, LEFT4>(
@@ -583,8 +583,8 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        fold: LEFT1 | LEFT2 | LEFT3 | LEFT4 | T4;
-        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T4;
+        fold: Promise<LEFT1 | LEFT2 | LEFT3 | LEFT4 | T4>;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => Promise<TPropagateFn | T4>;
     };
 
     eitherPipeA<T0, T1, T2, T3, T4, T5, LEFT1, LEFT2, LEFT3, LEFT4, LEFT5>(
@@ -596,8 +596,8 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        fold: LEFT1 | LEFT2 | LEFT3 | LEFT4 | LEFT5 | T5;
-        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T5;
+        fold: Promise<LEFT1 | LEFT2 | LEFT3 | LEFT4 | LEFT5 | T5>;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => Promise<TPropagateFn | T5>;
     };
 
     eitherPipeA<T0, T1, T2, T3, T4, T5, T6, LEFT1, LEFT2, LEFT3, LEFT4, LEFT5, LEFT6>(
@@ -625,8 +625,8 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        fold: LEFT1 | LEFT2 | LEFT3 | LEFT4 | LEFT5 | LEFT6 | LEFT7 | T7;
-        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T7;
+        fold: Promise<LEFT1 | LEFT2 | LEFT3 | LEFT4 | LEFT5 | LEFT6 | LEFT7 | T7>;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => Promise<TPropagateFn | T7>;
     };
 
     eitherPipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, LEFT1, LEFT2, LEFT3, LEFT4, LEFT5, LEFT6, LEFT7, LEFT8>(
@@ -641,8 +641,8 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        fold: LEFT1 | LEFT2 | LEFT3 | LEFT4 | LEFT5 | LEFT6 | LEFT7 | LEFT8 | T8;
-        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T8;
+        fold: Promise<LEFT1 | LEFT2 | LEFT3 | LEFT4 | LEFT5 | LEFT6 | LEFT7 | LEFT8 | T8>;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => Promise<TPropagateFn | T8>;
     };
 
     eitherPipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, LEFT1, LEFT2, LEFT3, LEFT4, LEFT5, LEFT6, LEFT7, LEFT8, LEFT9>(
@@ -658,8 +658,8 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        fold: LEFT1 | LEFT2 | LEFT3 | LEFT4 | LEFT5 | LEFT6 | LEFT7 | LEFT8 | LEFT9 | T9;
-        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T9;
+        fold: Promise<LEFT1 | LEFT2 | LEFT3 | LEFT4 | LEFT5 | LEFT6 | LEFT7 | LEFT8 | LEFT9 | T9>;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => Promise<TPropagateFn | T9>;
     };
 
     eitherPipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, LEFT1, LEFT2, LEFT3, LEFT4, LEFT5, LEFT6, LEFT7, LEFT8, LEFT9, LEFT10>(
@@ -677,6 +677,6 @@ export interface Pretyped {
         input?: T0,
     ) => {
         fold: LEFT1 | LEFT2 | LEFT3 | LEFT4 | LEFT5 | LEFT6 | LEFT7 | LEFT8 | LEFT9 | LEFT10 | T10;
-        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => TPropagateFn | T10;
+        propagate: <TPropagateFn>(propagateFn: TPropagateFn) => Promise<TPropagateFn | T10>;
     };
 }
