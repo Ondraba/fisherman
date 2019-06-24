@@ -1,5 +1,5 @@
 import {Pretyped} from './pretyped';
-import {pipeA, composeA, inject, cond, either, maybe, reader, maybePipeA, eitherPipeA, memoize} from './imp';
+import {pipeA, composeA, inject, cond, either, maybe, reader, maybePipeA, eitherPipeA, memoize, getOrArray} from './imp';
 
 export const _fish = {
     ...({
@@ -14,4 +14,5 @@ export const _fish = {
     maybe,
     reader,
     memoize,
+    getOrArray,
 };
