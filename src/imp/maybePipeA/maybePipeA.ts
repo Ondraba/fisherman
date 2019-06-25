@@ -15,5 +15,3 @@ export const maybePipeA = (...funcs: Array<AsyncFlowType<any, any>>) => (input?:
         value: res,
     };
 };
-
-

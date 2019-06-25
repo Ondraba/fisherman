@@ -315,9 +315,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T2>;
+        valueOr: <TValueOr>(orVal: TValueOr) => Promise<TValueOr> | Promise<T2>;
         value: Promise<T2>;
-        isEmpty:  Promise<boolean>;
+        isEmpty: Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3>(
@@ -327,9 +327,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T3>;
+        valueOr: <TValueOr>(orVal: TValueOr) => Promise<TValueOr> | Promise<T3>;
         value: Promise<T3>;
-        isEmpty:  Promise<boolean>;
+        isEmpty: Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4>(
@@ -340,9 +340,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T4>;
+        valueOr: <TValueOr>(orVal: TValueOr) => Promise<TValueOr> | Promise<T4>;
         value: Promise<T4>;
-        isEmpty:  Promise<boolean>;
+        isEmpty: Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5>(
@@ -354,9 +354,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T5>;
+        valueOr: <TValueOr>(orVal: TValueOr) => Promise<TValueOr> | Promise<T5>;
         value: Promise<T5>;
-        isEmpty:  Promise<boolean>;
+        isEmpty: Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6>(
@@ -369,9 +369,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T6>;
+        valueOr: <TValueOr>(orVal: TValueOr) => Promise<TValueOr> | Promise<T6>;
         value: Promise<T6>;
-        isEmpty:  Promise<boolean>;
+        isEmpty: Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7>(
@@ -385,9 +385,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T7>;
+        valueOr: <TValueOr>(orVal: TValueOr) => Promise<TValueOr> | Promise<T7>;
         value: Promise<T7>;
-        isEmpty:  Promise<boolean>;
+        isEmpty: Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8>(
@@ -402,9 +402,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T8>;
+        valueOr: <TValueOr>(orVal: TValueOr) => Promise<TValueOr> | Promise<T8>;
         value: Promise<T8>;
-        isEmpty:  Promise<boolean>;
+        isEmpty: Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9>(
@@ -420,9 +420,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        vvalueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T9>;
+        vvalueOr: <TValueOr>(orVal: TValueOr) => Promise<TValueOr> | Promise<T9>;
         value: Promise<T9>;
-        isEmpty:  Promise<boolean>;
+        isEmpty: Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(
@@ -439,9 +439,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T10>;
+        valueOr: <TValueOr>(orVal: TValueOr) => Promise<TValueOr> | Promise<T10>;
         value: Promise<T10>;
-        isEmpty:  Promise<boolean>;
+        isEmpty: Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(
@@ -459,9 +459,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T11>;
+        valueOr: <TValueOr>(orVal: TValueOr) => Promise<TValueOr> | Promise<T11>;
         value: Promise<T11>;
-        isEmpty:  Promise<boolean>;
+        isEmpty: Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(
@@ -480,9 +480,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T12>;
+        valueOr: <TValueOr>(orVal: TValueOr) => Promise<TValueOr> | Promise<T12>;
         value: Promise<T12>;
-        isEmpty:  Promise<boolean>;
+        isEmpty: Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(
@@ -502,9 +502,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T13>;
+        valueOr: <TValueOr>(orVal: TValueOr) => Promise<TValueOr> | Promise<T13>;
         value: Promise<T13>;
-        isEmpty:  Promise<boolean>;
+        isEmpty: Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(
@@ -525,9 +525,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T14>;
+        valueOr: <TValueOr>(orVal: TValueOr) => Promise<TValueOr> | Promise<T14>;
         value: Promise<T14>;
-        isEmpty:  Promise<boolean>;
+        isEmpty: Promise<boolean>;
     };
 
     maybePipeA<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>(
@@ -549,9 +549,9 @@ export interface Pretyped {
     ): (
         input?: T0,
     ) => {
-        valueOr: <TValueOr>(orVal: TValueOr) =>  Promise<TValueOr> |  Promise<T15>;
+        valueOr: <TValueOr>(orVal: TValueOr) => Promise<TValueOr> | Promise<T15>;
         value: Promise<T15>;
-        isEmpty:  Promise<boolean>;
+        isEmpty: Promise<boolean>;
     };
 
     eitherPipeA<T0, T1, T2, LEFT1, LEFT2>(

@@ -85,5 +85,3 @@ describe('maybePipeA tests', () => {
         expect(result).toBe(expectedResult);
     });
 });
-
-
